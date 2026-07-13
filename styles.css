@@ -354,12 +354,38 @@ main.content {
   }
 }
 
-@media (max-width: 520px) {
-  .collection-grid {
-    grid-template-columns: 1fr;
+/* Ajustes solo para celular: home */
+@media (max-width: 700px) {
+
+  .hero {
+    min-height: 100vh;
+    background-position: left center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-content {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    text-align: center;
+    transform: translateX(22%);
+  }
+
+  .hero-content h1 {
+    font-size: 42px;
+    line-height: 1.25;
+    letter-spacing: 6px;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .hero-button {
+    margin-top: 28px;
+    padding: 14px 42px;
+    font-size: 14px;
   }
 }
-
 .catalog-section h1 {
     font-size: 34px;
   }
