@@ -5,6 +5,7 @@ page-layout: full
 title-block-banner: false
 ---
 
+```{=html}
 <style>
 .navbar {
   position: sticky !important;
@@ -22,12 +23,11 @@ title-block-banner: false
   align-items: center;
 }
 </style>
-
-::: {.products-section}
-
+```
+::: products-section
 <a href="catalogo.html" class="back-button">← Volver a colecciones</a>
 
-# ESPEJOS DE ARCO
+# ESPEJOS DE CORTE IRREGULAR
 
 Diseños irregulares que amplían tus espacios con elegancia.
 
@@ -58,6 +58,4 @@ for (i in seq_len(nrow(productos))) {
   cat(html)
 }
 ```
-
 :::
-
