@@ -1,0 +1,22 @@
+project:
+  type: website
+
+website:
+  title: "AINHVA"
+  navbar:
+    left:
+      - text: "COLECCIONES"
+        href: "catalogo.html"
+      - text: "SOBRE AINHVA"
+        href: "#"
+    right:
+      - text: "Contáctanos"
+        href: "#"
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+
+editor: visual
+

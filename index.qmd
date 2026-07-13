@@ -1,0 +1,14 @@
+---
+title: "Ainhva Store"
+toc: false
+page-layout: full
+title-block-banner: false
+---
+
+::: hero
+::: hero-content
+# REFLEJA TU ESENCIA
+
+[DESCUBRIR](catalogo.html){.hero-button}
+:::
+:::

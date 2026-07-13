@@ -1,0 +1,65 @@
+---
+title: "Conoce todos nuestros diseños"
+toc: false
+page-layout: full
+title-block-banner: false
+---
+
+<style>
+.navbar {
+  position: sticky !important;
+  top: 0;
+  width: 100%;
+  min-height: 90px;
+  background-color: #faf8f5 !important;
+  border: none !important;
+  box-shadow: none !important;
+  z-index: 1000;
+}
+
+.navbar .container-fluid {
+  min-height: 90px;
+  align-items: center;
+}
+</style>
+
+::: {.products-section}
+
+<a href="catalogo.html" class="back-button">← Volver a colecciones</a>
+
+# Toda la colección de AINHVA
+
+Conoce la lista de todo nuestro catálogo
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| results: asis
+
+productos <- read.csv("productos.csv", stringsAsFactors = FALSE)
+
+#productos <- productos[productos$categoria, ]
+
+for (i in seq_len(nrow(productos))) {
+
+  html <- paste0(
+    '<div class="product-card-catalog">',
+      '<img src="', productos$img[i], '" alt="', productos$nombre[i], '">',
+      '<div class="product-info">',
+        '<h3>', productos$nombre[i], '</h3>',
+        '<p>', productos$descripcion[i], '</p>',
+        '<p class="product-price">', productos$precio[i], '</p>',
+        '<a href="#" class="product-button">Me interesa</a>',
+      '</div>',
+    '</div>'
+  )
+
+  cat(html)
+}
+```
+
+:::
+
+
+

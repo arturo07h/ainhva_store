@@ -1,0 +1,41 @@
+---
+title: "Colecciones"
+toc: false
+page-layout: full
+title-block-banner: false
+---
+
+<style>
+.navbar {
+  position: sticky !important;
+  top: 0;
+  width: 100%;
+  min-height: 50px;
+  background-color: #faf8f5 !important;
+  border: none !important;
+  box-shadow: none !important;
+  z-index: 1000;
+}
+
+.navbar .container-fluid {
+  min-height: 90px;
+  align-items: center;
+}
+
+.catalog-section {
+  padding-top: 0px !important;
+}
+</style>
+
+::: {.catalog-section}
+
+# COLECCIONES
+
+Espejos que transforman espacios  
+y reflejan tu esencia.
+
+<div class="collection-grid"><a href="#" class="collection-card"><img src="img/organicos.png" alt="Orgánicos"><div class="collection-title">ORGÁNICOS</div></a><a href="redondos.html" class="collection-card"><img src="img/redondos.png" alt="Redondos"><div class="collection-title">REDONDOS</div></a><a href="arco.html" class="collection-card"><img src="img/arco.png" alt="Arco"><div class="collection-title">ARCO</div></a><a href="irregulares.html" class="collection-card"><img src="img/irregulares.png" alt="Irregulares"><div class="collection-title">IRREGULARES</div></a></div>
+
+<a href="ver_todos.html" class="view-all-button">VER TODO</a>
+
+:::
